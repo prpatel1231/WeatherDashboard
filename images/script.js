@@ -74,7 +74,7 @@ $(document).ready(function(){
 
     });    
     
-    //Main Ajax call -- displaying the current selected citi's weather
+    //Main Ajax call
     function rendercity(searchCity){
         queryURL = baseURL + "weather?q=" + searchCity +"&units=" + tempUnits+ "&" + apiKey;
         $(".currentCity").show();
@@ -100,12 +100,12 @@ $(document).ready(function(){
             cityLon = response.coord.lon;
             var icon = response.weather[0].icon;
             
-            //displayijg current time along with cityname and countryname
+        
             var h3 = $("<h3>");
             $(".currentCity").append($("<h4>").text(moment().format('ll')));
             h3.append($("<span>").text(cityName + ", " + countryName));
             
-            //images for the icons and if sunny clear sky (code = 01d), one custom sunny icon added
+        
             if (icon == "01d"){
                 h3.append($("<span>").append($("<img>").attr({src:"assets\images\sun-bright-rays-sunny-weather.png",height: "15%", width:"20%"})));
             }
