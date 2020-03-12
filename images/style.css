@@ -1,0 +1,68 @@
+*{
+    font-family: sans-serif;
+}
+
+
+#nav-bar{
+    color: rgba(255, 255, 255, 0.897);
+    font-size: 30px;
+    font-weight: bold;
+    height :75px;
+}
+
+.currentCity {
+    padding: 15px;
+    border:1px solid lightgray;
+    border-radius: 5px;
+}
+
+h3{
+    overflow-wrap: break-word;
+}
+
+.currentCity p {
+    text-align: center;
+}
+
+.spantemp{
+    padding: 15px;
+    font-size: 65px;
+}
+
+.currentCity{
+    background-color:slategray;
+}
+.yourLocation{
+    background-color:slategray;
+}
+.placeholder{
+    height:20px;
+}
+
+.fivedays, h4{
+    padding-top: 15px;
+}
+
+.eachday{
+    background-color: slategray;
+    border-radius: 5px;
+    font-size: smaller;
+    color:black;
+    overflow: hidden;
+}
+
+.uvindex{
+    background-color: rgb(187, 35, 35);
+    color: white;
+    padding: 3px 5px;
+}
+
+.day{
+    text-align: center;
+    font-size: 22px;
+}
+
+.clearcities{
+    background-color:black;
+    color: rgba(255, 255, 255, 0.897);
+}
